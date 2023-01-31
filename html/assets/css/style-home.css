@@ -1,0 +1,627 @@
+@import url("https://kevurugames.com/wp-content/themes/classy/dist/main.css?ver=13");
+/*==========  Style Sheet - Vars  ==========*/
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-Black.eot");
+    src: local("Proxima Nova Black"), local("../fonts/ProximaNova/ProximaNova-Black"), url("../fonts/ProximaNova/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-Extrabld.eot");
+    src: local("Proxima Nova Extrabold"), local("../fonts/ProximaNova/ProximaNova-Extrabld"), url("../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-SemiboldIt.eot");
+    src: local("Proxima Nova Semibold Italic"), local("../fonts/ProximaNova/ProximaNova-SemiboldIt"), url("../fonts/ProximaNova/ProximaNova-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-SemiboldIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-SemiboldIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-SemiboldIt.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNovaT-Thin.eot");
+    src: local("Proxima Nova Thin"), local("../fonts/ProximaNova/ProximaNovaT-Thin"), url("../fonts/ProximaNova/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaT-Thin.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaT-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+    src: local("Proxima Nova Light"), local("../fonts/ProximaNova/ProximaNova-Light"), url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-BlackIt.eot");
+    src: local("Proxima Nova Black Italic"), local("../fonts/ProximaNova/ProximaNova-BlackIt"), url("../fonts/ProximaNova/ProximaNova-BlackIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-BlackIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-BlackIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-BlackIt.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-BoldIt.eot");
+    src: local("Proxima Nova Bold Italic"), local("../fonts/ProximaNova/ProximaNova-BoldIt"), url("../fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-BoldIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-BoldIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-BoldIt.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-ThinIt.eot");
+    src: local("Proxima Nova Thin Italic"), local("../fonts/ProximaNova/ProximaNova-ThinIt"), url("../fonts/ProximaNova/ProximaNova-ThinIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-ThinIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-ThinIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-ThinIt.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+    src: local("Proxima Nova Bold"), local("../fonts/ProximaNova/ProximaNova-Bold"), url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-RegularIt.eot");
+    src: local("Proxima Nova Regular Italic"), local("../fonts/ProximaNova/ProximaNova-RegularIt"), url("../fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-RegularIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-RegularIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-RegularIt.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-ExtrabldIt.eot");
+    src: local("Proxima Nova Extrabold Italic"), local("../fonts/ProximaNova/ProximaNova-ExtrabldIt"), url("../fonts/ProximaNova/ProximaNova-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-ExtrabldIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-ExtrabldIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-ExtrabldIt.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+    src: local("Proxima Nova Regular"), local("../fonts/ProximaNova/ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-LightIt.eot");
+    src: local("Proxima Nova Light Italic"), local("../fonts/ProximaNova/ProximaNova-LightIt"), url("../fonts/ProximaNova/ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-LightIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-LightIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-LightIt.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
+    src: local("Proxima Nova Semibold"), local("../fonts/ProximaNova/ProximaNova-Semibold"), url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Rajdhani Regular"), local("Rajdhani-Regular"), url("../fonts/Rajdhani/LDIxapCSOBg7S-QT7p4HM-Y.woff2") format("woff2");
+    unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da, U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Rajdhani SemiBold"), local("Rajdhani-SemiBold"), url("../fonts/Rajdhani/LDI2apCSOBg7S-QT7pbYF_Oreec.woff2") format("woff2");
+    unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da, U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Rajdhani Bold"), local("Rajdhani-Bold"), url("../fonts/Rajdhani/LDI2apCSOBg7S-QT7pa8FvOreec.woff2") format("woff2");
+    unicode-range: U+00??, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da, U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd;
+}
+
+html body {
+    font-family: ProximaNova, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #303031;
+}
+
+html body .wrapper {
+    max-width: 1340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+html body .wrapper.full-width {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper {
+    position: relative;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide {
+    position: relative;
+    background-position: right top;
+    background-size: cover;
+    height: 100vh;
+    max-height: 844px;
+    -webkit-transition-delay: 1250ms !important;
+       -moz-transition-delay: 1250ms !important;
+         -o-transition-delay: 1250ms !important;
+            transition-delay: 1250ms !important;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .wrapper {
+    padding-top: 12vw;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_content {
+    max-width: 600px;
+    width: 45%;
+    max-height: -webkit-calc(100% - 130px - 12vw);
+    max-height: -moz-calc(100% - 130px - 12vw);
+    max-height: calc(100% - 130px - 12vw);
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 105%;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    font-family: Rajdhani, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_prop {
+    position: absolute;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 126px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_prop svg,
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_prop img {
+    max-height: 25px;
+    margin: 0 1px;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_prop-logos {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .slick-track {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav {
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 0;
+    text-align: center;
+    height: 126px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav:before {
+    content: '';
+    z-index: -1;
+    width: 0;
+    height: -webkit-calc(100% + 2px);
+    height: -moz-calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    -webkit-transition: width 1000ms;
+    -o-transition: width 1000ms;
+    -moz-transition: width 1000ms;
+    transition: width 1000ms;
+    position: absolute;
+    background: #39b4bd;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav.slick-current:before {
+    width: -webkit-calc(100% + 1px);
+    width: -moz-calc(100% + 1px);
+    width: calc(100% + 1px);
+    -webkit-transition: width 2000ms;
+    -o-transition: width 2000ms;
+    -moz-transition: width 2000ms;
+    transition: width 2000ms;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav:last-child {
+    border-right: 0;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav .ok_logo {
+    width: 50%;
+    height: 72%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav .ok_logo svg,
+html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav .ok_logo img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+@media screen and (max-width: 1199px) {
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .wrapper {
+        padding-top: 6vw;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_prop {
+        bottom: 63px;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .ok_home-slide-nav {
+        height: 63px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide {
+        background-position: center bottom;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .wrapper {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+           -moz-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding-top: 145px;
+        padding-bottom: 145px;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_content {
+        max-width: inherit;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_title {
+        font-size: 40px;
+        line-height: 110%;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_desc {
+        font-size: 16px;
+        line-height: 175%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider-nav .slick-list {
+        padding: 0 35% 0 0 !important;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide {
+        max-height: initial;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_content {
+        max-width: 100%;
+        width: 100%;
+    }
+    html body .ok_block.ok_block-home-slider .ok_home-slider-wrapper .ok_home-slider .ok_home-slide .ok_prop .ok_prop-logos {
+        margin-top: 9px;
+    }
+}
+
+html body .ok_block.ok_block-benefits {
+    background: -webkit-linear-gradient(330.38deg, #021D4C 7.88%, #43077E 59.16%, #21D5D5 103.31%);
+    background: -moz-linear-gradient(330.38deg, #021D4C 7.88%, #43077E 59.16%, #21D5D5 103.31%);
+    background: linear-gradient(119.62deg, #021D4C 7.88%, #43077E 59.16%, #21D5D5 103.31%);
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+html body .ok_block.ok_block-benefits:after {
+    content: '';
+    width: 38%;
+    height: 100%;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    background-image: url("../img/benefits-snow.png");
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-title {
+    width: 85%;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 105%;
+    font-family: Rajdhani, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 38px;
+    margin-bottom: 120px;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-title .ok_benefits-vertical {
+    -webkit-writing-mode: tb-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+    white-space: nowrap;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 105.4%;
+    text-transform: uppercase;
+    font-family: Rajdhani, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-title .ok_benefits-vertical span {
+    color: #39b4bd;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list {
+    width: 100%;
+    max-width: 850px;
+    display: grid;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 75px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 118.5%;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
+    margin-bottom: 25px;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header .ok_icon {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header .ok_icon img,
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header .ok_icon svg {
+    max-width: 100%;
+    max-height: 46px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left center;
+       object-position: left center;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header .ok_title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 118.5%;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.9%;
+    color: #FFFFFF;
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 767px) {
+    html body .ok_block.ok_block-benefits {
+        background: #fff;
+        padding: 60px 0;
+    }
+    html body .ok_block.ok_block-benefits:after {
+        background: transparent;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits {
+        color: #303031;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-title {
+        color: inherit;
+        padding-left: 0;
+        font-size: 30px;
+        line-height: 105%;
+        letter-spacing: 0.035em;
+        margin-bottom: 30px;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-title .ok_benefits-vertical {
+        display: none;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list {
+        width: 100%;
+        max-width: 850px;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header {
+        margin-bottom: 18px;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_header .ok_title {
+        font-size: 20px;
+        line-height: 120%;
+        color: #303031;
+    }
+    html body .ok_block.ok_block-benefits .ok_benefits .ok_benefits-list .ok_benefits-item .ok_content {
+        font-size: 16px;
+        line-height: 175%;
+        color: #303031;
+    }
+}
